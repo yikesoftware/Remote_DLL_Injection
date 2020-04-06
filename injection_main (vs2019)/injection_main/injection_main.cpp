@@ -1,4 +1,4 @@
-﻿#include<cstdio>
+#include<cstdio>
 #include<windows.h>
 #include<cstdlib>
 #include<iostream>
@@ -22,8 +22,8 @@ int EnableDebugPriv(const char* name)
     tp.Privileges[0].Attributes = SE_PRIVILEGE_ENABLED;
     tp.Privileges[0].Luid = luid;
     //调整权限
-    AdjustTokenPrivileges(hToken, 0, &tp, sizeof(TOKEN_PRIVILEGES), NULL, NULL);
-    return 0;
+    int ret = AdjustTokenPrivileges(hToken, 0, &tp, sizeof(TOKEN_PRIVILEGES), NULL, NULL);
+    return ret;
 }
 
 int remoteInjection(const DWORD PID) {
@@ -33,7 +33,15 @@ int remoteInjection(const DWORD PID) {
 
     printf("DEFAULT DLL PATH: %s\n", DLLname);
 
-    EnableDebugPriv((const char*)SE_DEBUG_NAME);
+    if (!EnableDebugPriv((const char*)SE_DEBUG_NAME)) {
+        cout << "* FAIL TO: Get SEDEBUG privilege" << endl;
+        return 0;
+    }
+    else {
+        cout << "* SUCCESS TO: Get SEDEBUG privilege" << endl;
+    }
+
+
 
     hRemoteProcess = OpenProcess(PROCESS_ALL_ACCESS, false, PID);
     if (hRemoteProcess) {
