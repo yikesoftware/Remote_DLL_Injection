@@ -6,7 +6,7 @@ windowsAPI
 ## eqqie_dll (vs2019)
 测试用的DLL文件源代码K<br>
 成功注入该DLL后会弹出提示窗<br>
-*也可以使用自己编写的DLL*
+*也可以使用自己编写的DLL进行注入*
 
 ## injection_main (vs2019)
 注入程序主程序源代码<br>
