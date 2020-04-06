@@ -1,0 +1,8 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppClean.targets(76,5): warning : 对路径“c:\users\djw20\documents\c++\win32_learn\eqqie_dll\x64\debug\eqqie_dll.dll”的访问被拒绝。
+  pch.cpp
+  dllmain.cpp
+C:\Users\djw20\Documents\C++\win32_learn\eqqie_dll\eqqie_dll\dllmain.cpp(11,12): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“__int64”
+C:\Users\djw20\Documents\C++\win32_learn\eqqie_dll\eqqie_dll\dllmain.cpp(11,12): message : 请考虑在格式字符串中使用“%lld”
+C:\Users\djw20\Documents\C++\win32_learn\eqqie_dll\eqqie_dll\dllmain.cpp(11,12): message : 请考虑在格式字符串中使用“%Id”
+C:\Users\djw20\Documents\C++\win32_learn\eqqie_dll\eqqie_dll\dllmain.cpp(11,12): message : 请考虑在格式字符串中使用“%I64d”
+LINK : fatal error LNK1104: 无法打开文件“C:\Users\djw20\Documents\C++\win32_learn\eqqie_dll\x64\Debug\eqqie_dll.dll”

@@ -1,0 +1,6 @@
+﻿  injection_main.cpp
+C:\Users\djw20\Documents\C++\win32_learn\injection_main\injection_main\injection_main.cpp(49,16): warning C4477: “printf”: 格式字符串“%p”需要类型“void *”的参数，但可变参数 1 拥有了类型“__int64”
+C:\Users\djw20\Documents\C++\win32_learn\injection_main\injection_main\injection_main.cpp(49,16): warning C4313: “printf”: 格式字符串中的“%p”与“__int64”类型的参数 1 冲突
+C:\Users\djw20\Documents\C++\win32_learn\injection_main\injection_main\injection_main.cpp(72,16): warning C4477: “printf”: 格式字符串“%p”需要类型“void *”的参数，但可变参数 1 拥有了类型“__int64”
+C:\Users\djw20\Documents\C++\win32_learn\injection_main\injection_main\injection_main.cpp(72,16): warning C4313: “printf”: 格式字符串中的“%p”与“__int64”类型的参数 1 冲突
+  injection_main.vcxproj -> C:\Users\djw20\Documents\C++\win32_learn\injection_main\Debug\injection_main.exe
