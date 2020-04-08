@@ -22,7 +22,7 @@ windowsAPI
 # Attention
 注意需要保证主程序、动态链接库以及目标程序的版本统一性（x86/x64）
 
-# statement
+# Statement
 本项目仅作为个人WIN32编程学习用途，请勿进行非法活动
 
 by.赤道企鹅™
