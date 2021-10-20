@@ -25,5 +25,3 @@ windowsAPI
 # Statement
 本项目仅作为个人WIN32编程学习用途，请勿进行非法活动
 
-by.赤道企鹅™
-
